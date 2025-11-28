@@ -102,12 +102,12 @@ NPB_SP_cpu_parallel_homework_2/
 
 ```bash
 cd npb-3.3-c/SP
-make CLASS=A ACTION=exec 
+make CLASS=A ACTION=exec
+./dvm run ../bin/sp.A.x 
 ```
 Параметры запуск можно задавать редактируя сам скрипт dvm, основное внимание стоит уделить переменным DVMH_NUM_THREADS (на этапе 2)
 ```bash
 DVMH_NUM_THREADS=1..N
-./dvm run ../bin/sp.A.x
 ```
 Для удаления промежуточных файлов и повторной чистой сборки используйте:
 ```bash
